@@ -9,6 +9,6 @@ inputs:
     path: azureml:mlopstestdata:1
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: mlopstest-compute
+compute: mlopstestcluster
 experiment_name: testexperiment
 description: training model job
