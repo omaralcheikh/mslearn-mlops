@@ -26,7 +26,9 @@ def main(args):
     # train model
     train_model(args.reg_rate, X_train, X_test, y_train, y_test)
 
-
+def train_model(reg_rate, X_train, X_test, y_train, y_test):
+    model = LogisticRegression(C=1/0.1, solver="liblinear").fit(X_train, y_train)
+    
 def get_csvs_df(path):
     if not os.path.exists(path):
         raise RuntimeError(f"Cannot use non-existent path provided: {path}")
