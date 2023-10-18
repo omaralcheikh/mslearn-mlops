@@ -1,0 +1,5 @@
+$schema: https://azuremlschemas.azureedge.net/latest/data.schema.json
+name: mlopstestdata
+description: Dataset test training data.
+type: uri_folder
+path: data/
