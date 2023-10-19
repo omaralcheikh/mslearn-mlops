@@ -25,7 +25,7 @@ jobs:
         flake8 src/model/
     - name: Run Unit tests
       run: |
-        python test/test_train.py
+        python tests/test_train.py
   create_pr_repo_sync:
     runs-on: ubuntu-latest
     steps:
