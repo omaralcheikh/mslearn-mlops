@@ -23,6 +23,9 @@ jobs:
     - name: Run linting tests
       run: | 
         flake8 src/model/
+    - name: Run Unit tests
+      run: |
+        python test/test_train.py
   create_pr_repo_sync:
     runs-on: ubuntu-latest
     steps:
