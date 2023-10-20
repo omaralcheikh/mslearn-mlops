@@ -23,6 +23,9 @@ jobs:
     - name: Run linting tests
       run: | 
         flake8 src/model/
+    - name: Install packages
+      run: |
+        pip install -r requirements.txt
     - name: Run Unit tests
       run: |
         python tests/test_train.py
