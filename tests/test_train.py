@@ -1,4 +1,7 @@
-from model.train import get_csvs_df
+import sys
+sys.path.insert(0, './src/model/')
+
+from train import get_csvs_df
 import os
 import pytest
 
